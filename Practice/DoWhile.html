@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script="text/javascript" src="jspractice.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+      var userChoise = "";
+    do{
+      var targetNumber=Number(prompt("Please enter the Number",""));
+      var start = 0;
+      	while(start<=targetNumber){
+      		document.write(start+'<br/>')
+      		start += 2;
+      	}
+        do{
+          userChoise=prompt("Please Enter Your Choise- Yes or No").toUpperCase();
+          if(userChoise != "YES" && userChoise!="NO"){
+              alert("Enter Correct choise");
+          }
+        }while(userChoise != "YES" && userChoise!="NO")
+      }while (userChoise=="YES") {
+
+      }
+</script>
+</body>
+</html>

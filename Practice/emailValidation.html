@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script="text/javascript" src="jspractice.js"></script>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>Email Address</td>
+        <td><input type="text" id="email"/></td>
+    </tr>
+    <tr>
+        <td>Email Part</td>
+        <td><input type="text" id="emailpart"/></td>
+    </tr>
+    <tr>
+        <td>Domain Name</td>
+        <td><input type="text" id="Domain"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" value="Add" onClick="myfunc()"/></td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td>Website URL</td>
+        <td><input type="text" id="url"/></td>
+    </tr>
+    <tr>
+        <td>Top Level Domain</td>
+        <td><input type="text" id="domainLevel"/></td>
+    </tr>
+    
+    <tr>
+        <td></td>
+        <td><input type="button" value="Get Domain Level" onClick="getDomainName()"/></td>
+    </tr>
+</table>
+    <script type="text/javascript">
+        function myfunc(){
+
+            var emailaddress=document.getElementById('email').value;
+            var emailpart=emailaddress.substring(0,emailaddress.indexOf("@"));
+            var domainPart=emailaddress.substring(emailaddress.indexOf("@")+1);
+            document.getElementById('emailpart').value=emailpart;
+            document.getElementById('Domain').value=domainPart;
+        }
+        function getDomainName(){
+            var url=document.getElementById('url').value;
+            var TopDomain=url.substring(url.lastIndexOf("."));
+            document.getElementById('domainLevel').value=TopDomain;
+        }
+
+    </script>
+    
+
+</body>
+</html>

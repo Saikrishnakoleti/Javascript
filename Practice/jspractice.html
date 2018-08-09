@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script="text/javascript" src="jspractice.js"></script>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>Frist Number</td>
+        <td><input type="text" id="first"/></td>
+    </tr>
+    <tr>
+        <td>Second Number</td>
+        <td><input type="text" id="second"/></td>
+    </tr>
+    <tr>
+        <td>Result</td>
+        <td><input type="text" id="text"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" value="Add" onClick="myfunc()"/></td>
+    </tr>
+</table>
+<script type="text/javascript">
+    function myfunc(){
+    var firstNumber=parseFloat(document.getElementById('first').value);
+    if(firstNumber==""){
+    alert("Enter First Number");
+    return;
+    }
+    firstNumber=parseInt(firstNumber);
+    if(isNaN(firstNumber)){
+    alert("Enter correct First Number");
+    return;
+    }
+   
+   var secondNumber=parseFloat(document.getElementById('second').value);
+   if(secondNumber==""){
+    alert("Enter Second Number");
+    return;
+    }
+    firstNumber=parseInt(firstNumber);
+    if(isNaN(secondNumber)){
+    alert("Enter correct Second Number");
+    return;
+    }
+    var result=document.getElementById('text').value=firstNumber+secondNumber;
+};
+
+</script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script="text/javascript" src="jspractice.js"></script>
+</head>
+<body>
+<input type="text" id="demo"/>
+<button onclick="myTest()">Test</button>
+<script type="text/javascript">
+
+function myTest(){
+  var Num = document.getElementById('demo').value;
+    var start=0;
+      for(; ; start+=2){
+          if(start > Num){
+            break;
+          }
+    		document.write(start+"<br/>")
+  	}
+}
+</script>
+</body>
+</html>
