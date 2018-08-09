@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<script>
+function addargs(){
+    var sum=0;
+    document.write("Total Count ="+arguments.length+"</br>")
+    for(var i=0; i<arguments.length;i++){
+        sum +=arguments[i];
+    }
+    document.write("Sum of Numbers ="+ sum)
+    document.write("<br></br>")
+}
+addargs();
+addargs(10,20,30);
+</script>
+
+</body>
+</html> 

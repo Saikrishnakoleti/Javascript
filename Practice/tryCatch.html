@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Handling Errors try and catch blocks</h2>
+
+<script>
+var numerator = Number(prompt("Please enter the numerator"));
+var denominator = Number(prompt("Please enter the denominator"));
+    function divide(){
+    try{
+        if(denominator==0){
+            throw{
+                error:"divide by is Zero Error",
+                message: "denominator cant be Zero"
+            }
+        }
+        else{
+            document.write("the result is ="+(numerator/denominator));
+        }
+    }
+    catch(e){
+        document.write("The Error is ="+ e.error+"</br>");
+        document.write("The Message is = "+ e.message+"</br>");
+    }
+}
+divide();
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<script>
+function printarguments(){
+    document.write("arguments count "+ arguments.length+"</br>")
+    for(var i=0;i<arguments.length;i++){
+        document.write("Total arguments "+i+" "+arguments[i]+"</br>");
+    }
+    document.write("</br>")
+}
+printarguments();
+printarguments("A", "B")
+printarguments(10,20,30)
+
+</script>
+
+</body>
+</html> 
