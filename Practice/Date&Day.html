@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Print the dates</h2>
+
+<script>
+   var dateOfBirth= new Date("November 13, 1994 6:07:00")
+   var day=dateOfBirth.getDay();
+   document.write(printDay(day));
+   function printDay(weekName){
+       var weeks =["sunday","monday","tuesday","wednesday","thrusday","friday","Saturday"]
+       return weeks[weekName]
+   }
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Date Formate</h2>
+
+<script>
+   var dateOfBirth= new Date("November 15, 1994 6:07:00")
+   
+   document.write(formateDate(dateOfBirth));
+
+   function formateDate(date){
+
+       var year= date.getFullYear();
+       var month = date.getMonth();
+       month += 1;
+
+    // if(month < 10){
+    //     month="0" + month;
+    // }
+    var day = date.getDate();
+    // if(day < 10){
+    //     day = "0" + day;
+    // }
+    return day+"/"+month+"/"+year;
+   }
+</script>
+
+</body>
+</html> 

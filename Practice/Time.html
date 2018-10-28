@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Print the time Object</h2>
+<div id = "app"></div>
+<input type="button" value="Start Clock" onclick="startTime()"/>
+<input type="button" value="Stop Clock" onclick="stopTime()"/>
+
+<script>
+    var timer;
+    function startTime(){
+        timer=setInterval(getTime, 1000)
+    }
+    function stopTime(){
+        clearInterval(timer)
+    }
+    function getTime(){
+        document.getElementById("app").innerHTML= new Date();
+    }
+    getTime();
+   
+</script>
+
+</body>
+</html> 

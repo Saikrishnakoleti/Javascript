@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Timer start and stop</h2>
+<input type="text" value="10" id= "app" />
+<input type="button" value="Start Clock" onclick="startTimer('app')"/>
+<input type="button" value="Stop Clock" onclick="stopTimer()"/>
+
+<script>
+    var timerID;
+    function startTimer(controlId){
+        var control= document.getElementById(controlId);
+        var seconds = control.value;
+        seconds -= 1
+
+        if(seconds==0){
+            control.value="Done";
+            return;
+        }
+        else{
+            control.value=seconds;
+        }
+        timerId= setTimeout(function(){startTimer("app")},1000)
+    }
+    function stopTimer(){
+        clearTimeout(timerId);
+    }
+    
+   
+</script>
+
+</body>
+</html> 
